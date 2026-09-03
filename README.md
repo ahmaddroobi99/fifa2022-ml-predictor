@@ -158,7 +158,11 @@ npm test
 
 ## Deployment
 
-Production target is **Vercel** (TanStack Start + Nitro). `netlify.toml` is included if the same repo is imported on Netlify; APIs and SSR are reliable on a Nitro-compatible host.
+Production target is **Vercel** (TanStack Start + Nitro). The GitHub repository is:
+
+**https://github.com/ahmaddroobi99/fifa2022-ml-predictor**
+
+`netlify.toml` is included for a future Netlify import. A Netlify site named `fifa2022-ml-predictor` was created on the connected account, but the production deploy was **skipped due to account credit usage exceeded** — so there is no verified Netlify URL yet. Linking the GitHub repo from the Netlify UI will deploy it once credits/billing allow.
 
 ```bash
 npm run build

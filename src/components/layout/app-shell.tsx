@@ -55,6 +55,14 @@ function ShellInner({ children }: { children: ReactNode }) {
               {mode === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
             </button>
             <a
+              href="https://github.com/ahmaddroobi99/fifa2022-ml-predictor"
+              className="hidden h-11 items-center rounded-[12px] px-3 text-sm text-muted hover:text-fg sm:inline-flex"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <a
               href="https://github.com/ahmaddroobi99/WordCup2022_WinnerPrediction_ML"
               className="hidden h-11 items-center rounded-[12px] px-3 text-sm text-muted hover:text-fg sm:inline-flex"
               target="_blank"
