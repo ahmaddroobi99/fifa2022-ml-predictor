@@ -1,0 +1,18 @@
+# Optional Netlify config. The App Builder production target is Vercel;
+# this file documents a static/SSR fallback if the same repo is imported there.
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,0 +1,3 @@
+# Optional. The web app does not need Python at runtime.
+# Used only to rebuild src/data/*.json from data/source/.
+numpy>=1.26
