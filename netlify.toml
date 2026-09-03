@@ -1,18 +1,8 @@
-# Optional Netlify config. The App Builder production target is Vercel;
-# this file documents a static/SSR fallback if the same repo is imported there.
+# Netlify production build. Local/Grok/Vercel builds keep the Nitro vercel preset.
+# Netlify CI sets NETLIFY=true, which switches vite.config.ts to the netlify preset.
 [build]
   command = "npm run build"
-  publish = "dist/client"
+  publish = "dist"
 
 [build.environment]
   NODE_VERSION = "22"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/api/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200

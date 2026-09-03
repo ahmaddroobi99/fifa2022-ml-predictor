@@ -4,6 +4,7 @@ dist
 .vinxi
 .nitro
 .vercel
+.netlify
 .DS_Store
 *.log
 .env
@@ -12,6 +13,7 @@ dist
 .grok
 /screenshots
 /artifacts
+/netlify-dist
 AGENTS.md
 AGENTS.project.md
 .node_modules.lock
@@ -19,3 +21,5 @@ AGENTS.project.md
 .turbo
 .cache
 coverage
+.project_id
+*.zip
